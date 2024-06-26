@@ -456,45 +456,6 @@ body {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center both horizontally and vertically */
 }
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ensure it takes up at least the viewport height */
-  padding: 20px;
-  position: relative;
-}
-  
-  /* Left contact page */
-  .form-horizontal {
-  
-    max-width: 600px; /* Adjust this value to your desired width */
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .form-control, 
-  textarea {
-    max-width: 800px;
-    background-color: #000;
-    color: #fff;
-    opacity: 40%;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 12px;
-    margin-bottom: 8px;
-  }
-  
-  .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 600px;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 8px;
-  }
   
 /* Center the card-deck horizontally */
 .card-container {
