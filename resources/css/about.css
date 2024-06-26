@@ -1,0 +1,27 @@
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-text {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 18px; 
+    color: #fff; 
+    text-align: justify;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+}
+
+img.rounded {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

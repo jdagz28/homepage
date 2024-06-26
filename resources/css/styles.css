@@ -444,12 +444,6 @@ body {
 		padding:2%;
 	}
 }
-
-
-#contact {
-    width: 100%;
-    height: 100%;
-  }
   
 .section-header {
     font: 300 48px 'Quicksand', sans-serif;
@@ -458,7 +452,7 @@ body {
     letter-spacing: 6px;
     position: absolute;
     text-align: center; 
-    top: 22%; /* Center vertically */
+    top: 22%; 
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center both horizontally and vertically */
 }
@@ -587,24 +581,7 @@ button:focus {
     outline: none;
 }
 
-.about-container {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure it takes up at least the viewport height */
-    position: relative;
-}
-
-.about-text {
-    font-family: 'Montserrat', sans-serif; /* Change the font family */
-    font-size: 22px; /* Change the font size */
-    color: #fff; /* Change the text color */
-}
-
-.row {
-    margin-top: 30px;
-}
 
 .project-container-opacity {
     position: relative;
