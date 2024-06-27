@@ -3,7 +3,7 @@
     flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensure it takes up at least the viewport height */
+    min-height: calc(100vh - 65px);
     padding: 20px;
     position: relative;
   }
