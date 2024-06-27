@@ -1,5 +1,6 @@
 .dataviz-container {
     display: flex;
+    border-top-style: solid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -12,7 +13,7 @@
 
 .dataviz-header {
     font: 300 34px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
+    color: white;
     position: top;
     text-align: center; 
     margin-top: 80px;

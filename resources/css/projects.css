@@ -1,124 +1,99 @@
-
-/* Center the card-deck horizontally */
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure it takes up at least the viewport height */
-    position: relative;
-    overflow: hidden; /* Hide overflow to limit visible cards */
+.projects-header {
+    font: 300 34px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    position: top;
+    text-align: center; 
+    margin-top: 80px;
 }
 
-.card-slide {
-    display: flex; /* Display cards in a row */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap to each card */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: none; /* Hide scrollbars */
-    -ms-overflow-style: none; /* Hide scrollbars in IE/Edge */
-}
-
-.card {
-    flex: 0 0 calc(25% - 20px); /* Set the card width (4 cards per row) */
-    max-width: calc(25% - 20px); /* Limit the maximum card width */
-    text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    scroll-snap-align: start; /* Snap alignment to start of each card */
-    margin-right: 20px; /* Spacing between cards */
-}
-
-/* Hide default scrollbar for card slide */
-.card-slide::-webkit-scrollbar {
-    display: none;
-}
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    font-size: 24px;
-}
-
-.card p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.card a {
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.card a:hover {
-    background-color: #0056b3;
-}
-
-/* Navigation buttons */
-.navigation-buttons {
-    text-align: center;
-    margin-top: 10px;
-    position: absolute;
-    left: 50%; /* Center horizontally */
-    top: 65%;
-    transform: translateX(-50%); /* Center horizontally */
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:focus {
-    outline: none;
-}
-
-
-
-.project-container-opacity {
-    position: relative;
-}
-
-.project-container-opacity::before {
-    content: "";
-    background-image: url('../images/714849_05.png'); /* Replace with your image path */
-    background-size:cover;
-    background-position: center;
-    background-repeat: repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
+.projects-container {
+    border-color: rgba(230, 230, 230, 0.8);
+    border-top-style: solid;
+    border-width: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 3rem 0 2rem 0;
     width: 100%;
-    height: 1000px;
-    opacity: 0.2; /* Adjust the opacity value as needed */
-    z-index: -1;
-}
-
-.project-body {
-    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
-    padding: 20px;
-    margin: 0 15%; /* Adjust the margins as needed */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-body h2{
-    opacity: 1; /* 100% opacity for text inside the container */
-    font-size: 32px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight:bold;
-}
-
-.project-body p {
-    font-size: 18px;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    justify-content: center;
+  }
+  
+  .projects-container h2 {
+    margin: auto;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+  }
+  
+  .project-preview {
+    width: 80%;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: var(--border);
+  }
+  
+  .project:hover {
+    filter: none;
+    transition: 0.8s ease;
+  }
+  
+  .project {
+    filter: grayscale(100%);
+    position: relative;
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50.5%);
+    height: 93.5%;
+    width: 80.5%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: 0.5s ease;
+  }
+  
+  .text-overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 427px) {
+    .middle-container {
+      width: 96%;
+    }
+  }
+  
+  @media only screen and (min-width: 1100px) {
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    .middle-container {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .middle-container {
+      width: 96%;
+    }
+  }
+  
