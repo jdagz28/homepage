@@ -19,8 +19,8 @@
     .form-control, 
     textarea {
       max-width: 800px;
-      background-color: #000;
-      color: #fff;
+      background-color: #cfcece;
+      color: black;
       opacity: 40%;
       font-size: 16px;
       letter-spacing: 1px;

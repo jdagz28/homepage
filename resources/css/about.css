@@ -12,13 +12,14 @@
 }
 
 .about-text {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 18px; 
-    color: #fff; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem; 
+    color: white; 
     text-align: justify;
     max-width: 800px; 
     margin: 0 auto; 
     padding: 20px 0; 
+    font-weight: lighter;
 }
 
 img.rounded {
