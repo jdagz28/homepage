@@ -10,14 +10,12 @@
     border-color: rgba(230, 230, 230, 0.8);
     border-top-style: solid;
     border-width: 1px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin: 3rem 0 2rem 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     justify-content: center;
+    align-items: center;
   }
   
   .projects-container h2 {
@@ -26,11 +24,11 @@
     letter-spacing: 0.15rem;
   }
   
-  .project-preview {
-    width: 80%;
+  .projects-preview {
+    transform: scale(0.8);
     border-style: solid;
     border-width: 0.5rem;
-    border-color: var(--border);
+    border-color: #00E676;
   }
   
   .project:hover {
@@ -53,7 +51,7 @@
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50.5%);
-    height: 93.5%;
+    height: 70%;
     width: 80.5%;
     align-items: center;
     justify-content: center;
@@ -63,7 +61,8 @@
   
   .text-overlay {
     color: white;
-    font-size: 20px;
+    font-size: 3.5rem;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
