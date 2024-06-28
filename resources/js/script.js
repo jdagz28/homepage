@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // Typing effect initialization
   const typedTextSpan = document.querySelector(".typed-text");
   const cursorSpan = document.querySelector(".cursor");
   const textArray = [
